@@ -84,11 +84,11 @@ export const ToDoList = {
 
         const taskName = document.createElement('p');
         taskName.classList.add('task_title');
-        taskName.textContent = taskData.name;
+        taskName.textContent = taskData.name.trim();
 
         const taskDescription = document.createElement('p');
         taskDescription.classList.add('task_descr');
-        taskDescription.textContent = taskData.description;
+        taskDescription.textContent = taskData.description.trim();
 
         const decreaseButton = document.createElement('button');
         decreaseButton.classList.add('delete_button', 'button');
